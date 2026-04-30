@@ -71,25 +71,22 @@ GenerateDataTest/
 └── README.md
 ```
 ## requirements
-# LLM + API
+1. LLM + API
 groq
 openai
 
-# Environment
+2. Environment
 python-dotenv
 
-# Data processing
+3. Data processing
 pandas
 openpyxl
 
-# Validation / regex nâng cao (optional)
-regex
-
-# RAG (tuỳ bạn dùng mức nào)
+4. RAG
 faiss-cpu
 sentence-transformers
 
-# Utils
+5. Utils
 tqdm
 ---
 
@@ -98,7 +95,7 @@ tqdm
 ### 1. Cài thư viện
 
 ```bash
-pip install -r requirements.txt
+Cài các thư viện cần thiết
 ```
 
 ### 2. Thiết lập API Key
