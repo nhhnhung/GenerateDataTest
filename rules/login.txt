@@ -1,0 +1,11 @@
+FUNCTION: LOGIN
+
+FIELDS:
+- Email
+- Password
+- Expected
+
+VALIDATION:
+- Sai email hoặc password -> "Warning: No match for E-Mail Address and/or Password."
+- Password rỗng -> "Warning: No match for E-Mail Address and/or Password."
+- Chống SQL injection -> "Warning: No match for E-Mail Address and/or Password."

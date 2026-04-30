@@ -1,0 +1,32 @@
+[
+  {
+    "TestType": "HAPPY",
+    "Email": "john068@mail.com",
+    "Password": "123456",
+    "Expected": "Login successful"
+  },
+  {
+    "TestType": "NEGATIVE",
+    "Email": "nonexistent@example.com",
+    "Password": "anyPass123",
+    "Expected": "Warning: No match for E-Mail Address and/or Password."
+  },
+  {
+    "TestType": "NEGATIVE",
+    "Email": "john72@mail.com",
+    "Password": "",
+    "Expected": "Warning: No match for E-Mail Address and/or Password."
+  },
+  {
+    "TestType": "NEGATIVE",
+    "Email": "john72@mail.com' OR '1'='1",
+    "Password": "abc123",
+    "Expected": "Warning: No match for E-Mail Address and/or Password."
+  },
+  {
+    "TestType": "BOUNDARY",
+    "Email": "john068@mail.com",
+    "Password": "aaaaaaaaaaaaaaaaaaaaa",
+    "Expected": "Warning: No match for E-Mail Address and/or Password."
+  }
+]

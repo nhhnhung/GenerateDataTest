@@ -1,0 +1,26 @@
+FUNCTION: REGISTER
+
+FIELDS:
+- FirstName (1-32 ký tự)
+- LastName (1-32 ký tự)
+- Email (định dạng email hợp lệ)
+- Telephone (3-32 ký tự, chỉ số)
+- Password (6-32 ký tự)
+- Confirm (phải trùng Password)
+- Expected
+
+VALIDATION:
+- Email không được trùng
+- Password và Confirm phải khớp
+- Telephone phải là số
+- Email sai định dạng -> "E-Mail Address does not appear to be valid!"
+- Email có khoảng trắng -> "A part followed by '@' should not contain the symbol ' '."
+- Email không có @ -> "Please include an '@' in the email address. '<EMAIL>' is missing an '@'."
+- Email còn thiếu phần sao @ -> "Please enter a part following '@'. '<EMAIL>' is incomplete."
+- Telephone sai độ dài -> "Telephone must be between 3 and 32 characters!"
+- Telephone là chữ -> "Telephone must be between 3 and 32 characters!"
+- FirstName sai độ dài -> "First Name must be between 1 and 32 characters!"
+- Email đã tồn tại -> "Warning: E-Mail Address is already registered!"
+- Password confirm sai -> "Password confirmation does not match password!"
+- Password ít hơn 6 ký tự -> "Password must be between 6 and 32 characters!"
+

@@ -1,0 +1,25 @@
+FUNCTION: SEARCH
+
+FIELDS:
+- keyword
+
+EXISTING PRODUCTS:
+- iPhone
+- MacBook
+- iMac
+- Galaxy
+- iPod
+- HTC
+- Samsung
+- Sony
+- HP
+- Microsoft
+
+VALIDATION RULES:
+- Keyword cho phép chữ hoa hoặc chữ thường
+- Hệ thống tìm kiếm KHÔNG phân biệt chữ hoa chữ thường (case-insensitive)
+- Keyword có thể là một phần của tên sản phẩm
+- Cho phép số
+- Negative khi keywork bỏ trống
+- Không cho SQL injection
+- Không cho script

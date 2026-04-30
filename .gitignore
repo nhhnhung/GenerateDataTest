@@ -1,0 +1,13 @@
+# ignore environment files
+.env
+
+# ignore IDE
+.idea/
+
+# ignore build (Java)
+target/
+
+# ignore Python
+__pycache__/
+*.pyc
+.venv/
